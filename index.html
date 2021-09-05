@@ -103,7 +103,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/05/hexo%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" data-id="ckt77sou60000agw9gx9l9ml4" data-title="hexo使用中的一些问题" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/05/hexo%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" data-id="ckt78ruk60005q0w9c6yf4xgu" data-title="hexo使用中的一些问题" class="article-share-link">Share</a>
       
       
       
@@ -117,9 +117,9 @@
 
 
   
-    <article id="post-Hexo建站" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Hexo布署" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/09/05/Hexo%E5%BB%BA%E7%AB%99/" class="article-date">
+    <a href="/2021/09/05/Hexo%E5%B8%83%E7%BD%B2/" class="article-date">
   <time class="dt-published" datetime="2021-09-05T12:05:02.000Z" itemprop="datePublished">2021-09-05</time>
 </a>
     
@@ -131,7 +131,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/05/Hexo%E5%BB%BA%E7%AB%99/">Hexo部署</a>
+      <a class="p-name article-title" href="/2021/09/05/Hexo%E5%B8%83%E7%BD%B2/">Hexo部署</a>
     </h1>
   
 
@@ -149,7 +149,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/05/Hexo%E5%BB%BA%E7%AB%99/" data-id="ckt77qso70000h8w9arpa00qt" data-title="Hexo部署" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/05/Hexo%E5%B8%83%E7%BD%B2/" data-id="ckt78rujw0001q0w93rma67vq" data-title="Hexo部署" class="article-share-link">Share</a>
       
       
       
@@ -185,15 +185,29 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>使用ssh -keygen</p>
+        <p>github是我们经常使用的工具，需要经常链接到github中去，每次网页操作就显得麻烦得很，这时使用ssh密钥，就可以解决这个问题。</p>
+<h2 id="1-生成密钥"><a href="#1-生成密钥" class="headerlink" title="1.生成密钥"></a>1.生成密钥</h2><p>使用ssh -keygen命令生成本地密钥,使用git的<code>bash</code>进行操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh <span class="comment">#尝试进入.ssh文件，若返回提示该目录不存在，执行以下命令</span></span><br><span class="line">ssh -keygen <span class="comment">#生成密钥</span></span><br><span class="line"><span class="built_in">cd</span> ~/.ssh <span class="comment">#进入.ssh</span></span><br><span class="line">ls <span class="comment"># dir window使用</span></span><br><span class="line">cat id_rsa.pub <span class="comment">#查看密钥文件</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Bing\AppData\Roaming\Typora\typora-user-images\image-20210905210403832.png" alt="image-20210905210403832"></p>
+<h2 id="2-添加到github中"><a href="#2-添加到github中" class="headerlink" title="2.添加到github中"></a>2.添加到github中</h2><p>进入github网站，国内比较慢，需要自行解决，进入后找到设置项，在设置中找到ssh&amp;GPG keys，在ssh中点击ssh keys –&gt; New SSH key,将本地的ssh -keygen生成的<code>id_rsa.pub</code>文件中的密钥信息添加到ssh key</p>
+<p><img src="C:\Users\Bing\AppData\Roaming\Typora\typora-user-images\image-20210905210713769.png" alt="image-20210905210713769"></p>
+<p><img src="C:\Users\Bing\AppData\Roaming\Typora\typora-user-images\image-20210905210905469.png" alt="image-20210905210905469"></p>
+<p><img src="C:\Users\Bing\AppData\Roaming\Typora\typora-user-images\image-20210905211056091.png" alt="image-20210905211056091"></p>
+<h2 id="3-测试"><a href="#3-测试" class="headerlink" title="3.测试"></a>3.测试</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh git@github.com</span><br><span class="line">查看返回的信息，需要输入yes</span><br></pre></td></tr></table></figure>
+
+
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/05/ssh%E8%BF%9C%E7%A8%8B%E5%88%B0github/" data-id="ckt77qsol0004h8w9erft3w8u" data-title="ssh远程到github" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/05/ssh%E8%BF%9C%E7%A8%8B%E5%88%B0github/" data-id="ckt78ruk70006q0w98hhp5rup" data-title="ssh远程到github" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh%E3%80%81github/" rel="tag">ssh、github</a></li></ul>
+
     </footer>
   </div>
   
@@ -247,7 +261,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/05/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckt77qsog0001h8w9anca5vyv" data-title="Hexo搭建个人博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/05/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckt78rujp0000q0w90tlk8n2q" data-title="Hexo搭建个人博客" class="article-share-link">Share</a>
       
       
       
@@ -298,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/05/hello-world/" data-id="ckt77qsok0003h8w97iywfucf" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/05/hello-world/" data-id="ckt78rujy0002q0w98ohc3ul8" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -323,7 +337,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh%E3%80%81github/" rel="tag">ssh、github</a></li></ul>
     </div>
   </div>
 
@@ -333,7 +347,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+      <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/ssh%E3%80%81github/" style="font-size: 10px;">ssh、github</a>
     </div>
   </div>
 
@@ -359,7 +373,7 @@
           </li>
         
           <li>
-            <a href="/2021/09/05/Hexo%E5%BB%BA%E7%AB%99/">Hexo部署</a>
+            <a href="/2021/09/05/Hexo%E5%B8%83%E7%BD%B2/">Hexo部署</a>
           </li>
         
           <li>
