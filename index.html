@@ -25,7 +25,7 @@
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Bing52l">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/">
@@ -160,11 +160,87 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/06/Hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bing52l">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/09/06/Hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/" class="post-title-link" itemprop="url">Hexo博客美化</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-09-06 08:47:48 / 修改时间：10:07:56" itemprop="dateCreated datePublished" datetime="2021-09-06T08:47:48+08:00">2021-09-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>美化个人博客，爱美之心人皆有之。</p>
+<h2 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1. 安装主题"></a>1. 安装主题</h2><p>下面开始我们的Hexo博客的美化之旅。</p>
+<p>首先下载别人维护的美化主题,找到本地博客的根目录，右键选择使用git-bash打开，或使用命令提示符。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog &amp; hexo <span class="comment">#使用git—bash打开不用执行这步</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next <span class="comment">#下载主题到theme下的next目录中，next目录会自动创建</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2. 启用主题"></a>2. 启用主题</h2><p>在<code>_config.yml</code>文件中修改配置信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">默认配置</span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: landscape</span><br><span class="line">更改为</span><br><span class="line">theme: next</span><br><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-配置主题"><a href="#3-配置主题" class="headerlink" title="3. 配置主题"></a>3. 配置主题</h2><p>3.1 进入主题目录下的next中，找到主题配置文件</p>
+<p><img src="/.com//Blog\source_posts\Hexo博客美化\next主题配置文件.png" alt="next主题配置文件"></p>
+<p>3.2配置菜单</p>
+<p><img src="/.com//Blog\source_posts\Hexo博客美化\next主题菜单设置.png" alt="next主题菜单设置"></p>
+<p>3.3 为开启的菜单新建页（page）</p>
+<p>![hexo new page commit](D:\Blog\source_posts\Hexo博客美化\hexo new page commit.png)</p>
+<p>3.4 在Blog下的source目录下找到，新建的两个页的目录</p>
+<p>![hexo new page文件](D:\Blog\source_posts\Hexo博客美化\hexo new page文件.png)</p>
+<p>3.5 打开其目录下的<code>index.md</code>文件，编辑内容，两个目录下的文件同理</p>
+<img src="/.com//Blog\source\_posts\Hexo博客美化\为新生成的tags页配置中文名.png" alt="为新生成的tags页配置中文名" style="zoom:75%;">
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/06/first-title/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Bing52l">
       <meta itemprop="description" content="">
     </span>
 
@@ -222,7 +298,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Bing52l">
       <meta itemprop="description" content="">
     </span>
 
@@ -249,7 +325,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-06 08:00:26" itemprop="dateModified" datetime="2021-09-06T08:00:26+08:00">2021-09-06</time>
+                <time title="修改时间：2021-09-06 10:02:18" itemprop="dateModified" datetime="2021-09-06T10:02:18+08:00">2021-09-06</time>
               </span>
 
           
@@ -266,14 +342,14 @@
           <h2 id="1-端口"><a href="#1-端口" class="headerlink" title="1. 端口"></a>1. 端口</h2><p> 在使用hexo布署到github时会提示端口被占用，一般来说，出现这种情况，要么是被别的应用程序给占了，要么是打开了本地预览窗口没关导致的。</p>
 <h3 id="1-1-被别的程序占用端口"><a href="#1-1-被别的程序占用端口" class="headerlink" title="1.1 被别的程序占用端口"></a>1.1 被别的程序占用端口</h3><p>排查是什么占用的，能找到的，具体情况具体分析。能不能改，不能改就去改hexo的配置，详情参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment.html">Hexo文档</a></p>
 <h3 id="1-2-已打开的本地预览，占用端口"><a href="#1-2-已打开的本地预览，占用端口" class="headerlink" title="1.2 已打开的本地预览，占用端口"></a>1.2 已打开的本地预览，占用端口</h3><p>这个有点蠢没得说的，我也遇到了。直接关了就是</p>
-<h2 id="2-博客中发现博客没有标题"><a href="#2-博客中发现博客没有标题" class="headerlink" title="2.博客中发现博客没有标题"></a>2.博客中发现博客没有标题</h2><p>初次使用时，急急忙忙就部署了，刷新一看，昨没有标题呀。明明我有写一级标题的，原因就是部署的时候没输一个命令，当时完全无视了<code>hexo clean</code>这个命令，清理什么的。解决办法，重输以下命令，刷新即可</p>
+<h2 id="2-博客中发现博客没有标题"><a href="#2-博客中发现博客没有标题" class="headerlink" title="2. 博客中发现博客没有标题"></a>2. 博客中发现博客没有标题</h2><p>初次使用时，急急忙忙就部署了，刷新一看，昨没有标题呀。明明我有写一级标题的，原因就是部署的时候没输一个命令，当时完全无视了<code>hexo clean</code>这个命令，清理什么的。解决办法，重输以下命令，刷新即可</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="comment">#清除缓存</span></span><br><span class="line">hexo g <span class="comment">#生成部署</span></span><br><span class="line">hexo d <span class="comment">#布署到github</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="3-图片没上传"><a href="#3-图片没上传" class="headerlink" title="3.图片没上传"></a>3.图片没上传</h2><p>使用md编写的格式，原文件中有图片信息，图片信息引用至typeof的目录下，部署后发现没有图片。</p>
+<h2 id="3-图片没上传"><a href="#3-图片没上传" class="headerlink" title="3. 图片没上传"></a>3. 图片没上传</h2><p>使用md编写的格式，原文件中有图片信息，图片信息引用至typeof的目录下，部署后发现没有图片。</p>
 <p>安装使用插件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-
+<h2 id="4-新写的博客部署不上"><a href="#4-新写的博客部署不上" class="headerlink" title="4. 新写的博客部署不上"></a>4. 新写的博客部署不上</h2>
       
     </div>
 
@@ -296,7 +372,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Bing52l">
       <meta itemprop="description" content="">
     </span>
 
@@ -360,7 +436,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Bing52l">
       <meta itemprop="description" content="">
     </span>
 
@@ -437,7 +513,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Bing52l">
       <meta itemprop="description" content="">
     </span>
 
@@ -520,7 +596,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Bing52l">
       <meta itemprop="description" content="">
     </span>
 
@@ -641,7 +717,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+  <p class="site-author-name" itemprop="name">Bing52l</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -649,14 +725,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -687,7 +763,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Bing52l</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
